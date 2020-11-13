@@ -1,14 +1,14 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin center-horizental-vertical {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }

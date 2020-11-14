@@ -46,7 +46,7 @@
   }
 
   &__list {
-    @include center-horizental-vertical;
+    @include absCenter;
     list-style: none;
     text-align: center;
     width: 100%;

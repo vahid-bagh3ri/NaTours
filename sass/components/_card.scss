@@ -148,7 +148,7 @@
 
   // back side styling
   &__cta {
-    @include center-horizental-vertical;
+    @include absCenter;
     width: 90%;
     text-align: center;
   }

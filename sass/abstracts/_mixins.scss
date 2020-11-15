@@ -12,3 +12,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+ 0-600PX:       PHONE
+ 600-900PX:       Tablet portrait
+ 900-1200PX:        Tabley landscape
+ [1200 - 1800] is where our normal styles aply
+1800px + :       big desktop
+
+$breakpoint argument choices:
+- phone
+- tap-port
+- tap-desktop
+- big-desktop
+
+order: base + typography > general layout + grid> page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == phone {                        //600px
+    @media (max-width: 37.5em) {
+      @content
+    };
+  }
+  @if $breakpoint == tap-port {                     //900px
+    @media (max-width: 56.25em) {
+      @content
+    };
+  }
+  @if $breakpoint == tap-desktop {                 //1200px
+    @media (max-width: 75em) {
+      @content
+    };
+  }
+  @if $breakpoint == big-desktop {                 //1800px
+    @media (min-width: 112.5rem) {
+      @content
+    };
+  }
+}

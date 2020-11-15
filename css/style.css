@@ -1,3 +1,20 @@
+/*
+ 0-600PX:       PHONE
+ 600-900PX:       Tablet portrait
+ 900-1200PX:        Tabley landscape
+ [1200 - 1800] is where our normal styles aply
+1800px + :       big desktop
+
+$breakpoint argument choices:
+- phone
+- tap-port
+- tap-desktop
+- big-desktop
+
+order: base + typography > general layout + grid> page layout > components
+
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,17 +52,23 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5rem) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
 
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -437,7 +460,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
-    transition: all .5s .2s; }
+    transition: all 0.5s 0.2s; }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }

@@ -34,25 +34,28 @@ order: base + typography > general layout + grid> page layout > components
 */
 
 @mixin respond($breakpoint) {
-
-  @if $breakpoint == phone {                        //600px
+  @if $breakpoint == phone {
+    //600px
     @media (max-width: 37.5em) {
-      @content
-    };
+      @content;
+    }
   }
-  @if $breakpoint == tap-port {                     //900px
+  @if $breakpoint == tap-port {
+    //900px
     @media (max-width: 56.25em) {
-      @content
-    };
+      @content;
+    }
   }
-  @if $breakpoint == tap-desktop {                 //1200px
+  @if $breakpoint == tap-desktop {
+    //1200px
     @media (max-width: 75em) {
-      @content
-    };
+      @content;
+    }
   }
-  @if $breakpoint == big-desktop {                 //1800px
+  @if $breakpoint == big-desktop {
+    //1800px
     @media (min-width: 112.5rem) {
-      @content
-    };
+      @content;
+    }
   }
 }

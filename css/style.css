@@ -52,6 +52,9 @@ order: base + typography > general layout + grid> page layout > components
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -544,14 +547,42 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s; }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        display: flex;
+        flex-direction: column; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: flex;
+        flex-direction: row;
+        width: 50%; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right h2, .popup__right h3 {
+        text-align: center; } }
+    @media (max-width: 56.25em) {
+      .popup__right-btn {
+        margin: 0 auto;
+        text-align: center;
+        width: auto; } }
+    @media (max-width: 37.5em) {
+      .popup__right-btn {
+        margin: 0 auto;
+        text-align: center;
+        width: auto; } }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -939,6 +970,10 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-size: cover; } }
   @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
@@ -946,6 +981,9 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
     @media (max-width: 56.25em) {
       .book__form {
         width: 100%; } }

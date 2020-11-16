@@ -24,8 +24,8 @@
 
 $breakpoint argument choices:
 - phone
-- tap-port
-- tap-desktop
+- tab-port
+- tab-desktop
 - big-desktop
 
 order: base + typography > general layout + grid> page layout > components
@@ -40,13 +40,13 @@ order: base + typography > general layout + grid> page layout > components
       @content;
     }
   }
-  @if $breakpoint == tap-port {
+  @if $breakpoint == tab-port {
     //900px
     @media (max-width: 56.25em) {
       @content;
     }
   }
-  @if $breakpoint == tap-desktop {
+  @if $breakpoint == tab-desktop {
     //1200px
     @media (max-width: 75em) {
       @content;

@@ -175,6 +175,7 @@
     &__side {
       height: auto;
       position: relative;
+      box-shadow: none;
 
       &--back {
         transform: rotateY(0);
@@ -186,6 +187,9 @@
       transform: rotateY(0);
     }
 
+    &__details{
+      padding: 1rem 3rem;
+    }
     // back side styling
     &__cta {
       position: relative;

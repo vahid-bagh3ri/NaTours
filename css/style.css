@@ -565,7 +565,8 @@ body {
     vertical-align: middle;
     padding: 3rem 5rem; }
     @media (max-width: 56.25em) {
-      .popup__right h2, .popup__right h3 {
+      .popup__right h2,
+      .popup__right h3 {
         text-align: center; } }
     @media (max-width: 56.25em) {
       .popup__right-btn {
